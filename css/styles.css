@@ -14,13 +14,12 @@ li {
   margin: 5px;
 }
 
-
 h3 {
   clear: left;
 }
 
 .fullsize {
-  position: relative;
+  position: absolute;
 }
 
 .fullsize img {
@@ -29,68 +28,104 @@ h3 {
   left: 40px;
 }
 
+/* Thumb Image Sizes */
+.monogram {
+    width: 178px;
+    height: 144px;
+}
+
+.childhood {
+    width: 144px;
+    height: 180px;
+}
+
+.paperclip {
+    width: 103.125px;
+    height: 159.25px;
+}
+
+.red {
+    width: 159.375px;
+    height: 103.125px;
+}
+
+.colorpalette {
+    width: 198px;
+    height: 153px;
+}
+
 /* Use :nth-child to add borders to 1st, 2nd, 3rd */
+
 .thumbs li:nth-child(1) a {
   border: 5px solid red;
-  display: block;
-    width: 792px;
-    height: 612px;
+  display: block;   
 }
 .thumbs li:nth-child(2) a {
   border: 5px solid green;
   display: block;
-    width: 576px;
-    height: 720px;
 }
 .thumbs li:nth-child(3) a {
   border: 5px solid blue;
   display: block;
-    width: 3300px;
-    height: 5100px;
 }
 .thumbs li:nth-child(4) a {
   border: 5px solid yellow;
   display: block;
-    width: 5100px;
-    height: 3300px;
 }
 .thumbs li:nth-child(5) a {
   border: 5px solid orange;
   display: block;
+}
+
+/* Fullsize Image Size (792 X 612)   */
+
+#fullsize-1 {
     width: 792px;
     height: 612px;
 }
+
+#fullsize-2 {
+    width: 576px;
+    height: 720px;
+}
+
+#fullsize-3 {
+    width: 412.5px;
+    height: 637.5px;
+}
+
+#fullsize-4 {
+     width: 637.5px;
+    height: 412.5px;
+}
+
+#fullsize-5 {
+     width: 792px;
+    height: 612px;
+}
+
+
 /* Change Borders of Full Size Images */ 
 #fullsize-1:target {
   border: 5px solid red;
   z-index: 1;
-     width: 792px;
-    height: 612px;
   /* z-index changes stacking order*/ 
 }
 #fullsize-2:target {
   border: 5px solid green;
   z-index: 2;
-    width: 576px;
-    height: 720px;
 }
 #fullsize-3:target {
   border: 5px solid blue;
   z-index: 3;
-     width: 3300px;
-    height: 5100px;
 }
 #fullsize-4:target {
   border: 5px solid orange;
   z-index: 4;
-    width: 5100px;
-    height: 3300px;
 }
 #fullsize-5:target {
   border: 5px solid orange;
   z-index: 5;
-    width: 792px;
-    height: 612px;
 }
 /* Fancify */
 .fullsize img {
