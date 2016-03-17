@@ -1,11 +1,20 @@
-/*
-li {
+.horizontal {
+    display: block;
+}
+
+
+
+
+.navigation li {
     background: red;
-    margin: 30px;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navigation li a {
     text-decoration: none;
 }
-*/
-
 /* Portfolio Styling */
 
 .thumbs li, .fullsize li {

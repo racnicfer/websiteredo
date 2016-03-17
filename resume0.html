@@ -3,12 +3,18 @@
 
 <head>
    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <main>
    
     <title>Resume</title>
         
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="http://codepen.io/racnicfer/pen/PNYqMZ.css">
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://codepen.io/racnicfer/pen/PNYqMZ?editors=0010"></script>
+    <script src="js/main.js"></script>
     
 </head>
 
@@ -16,15 +22,30 @@
    
     <h1>About Me</h1> 
         <nav role='navigation'>
-          <ul>
+          <ul class="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="resume0.html">About</a></li>
             <li><a href="portfolio0.html">Portfolio</a></li>
             <li><a href="contact0.html">Contact</a></li>
           </ul>
         </nav>  
-        
-<h2>Education</h2>
+
+    
+  <div class='tabs'>
+    <ul class='horizontal'>
+      <li><a href="#tab-1">Tab 1</a></li>
+      <li><a href="#tab-2">Tab 2</a></li>
+      <li><a href="#tab-3">Tab 3</a></li>
+    </ul>
+  </div>
+  <div id='tabs_container'>
+    <div id='tab-1'></div>
+    <div id='tab-2'></div>
+    <div id='tab-3'></div>
+  </div>
+
+   
+      <h2>Education</h2>
     <h3>Homeschool/Semper Fidelis Co-op: Spokane, WA</h3>
         <ul>
             <li>-Semper-Fidelis Co-op: 2001-2011</li>
@@ -45,9 +66,9 @@
             <li>-Visual Communication Design</li>
             <li>-Piano Performance</li>
         </ul>
-        
-        
-<h2>Skillsets</h2>
+     
+   
+      <h2>Skillsets</h2>
     <ul>
         <li>Adobe Illustrator</li>
         <li>Adobe Photoshop</li>
@@ -57,7 +78,9 @@
         <li>Photography</li>
     </ul>
         
-<h2>Work Experience</h2>
+     
+     
+   <h2>Work Experience</h2>
        
            <h3>McDonald's: June 2013- September 2015 </h3>
         <ul>
@@ -80,6 +103,16 @@
             <li>-Assist students and faculty with specialty printing</li>
             <li>-Provide assistance for multi-media software issues</li>
         </ul>
+
+          
+          
+          
+          
+
+        
+        
+
+
         
 </body>
 
