@@ -1,20 +1,116 @@
+
+html {
+    font-family: 'Libre Baskerville', serif;
+    padding: 2em;
+    
+}
+.topbar {
+    height: 20em;
+    width: 100%;
+    margin-top: .75em;
+    display: inline-block;
+    text-align: center;
+    background-image: url(/img/me.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+   
+}
+.name {
+    padding-top: .33em;
+    font-size: 3em;
+    word-spacing: 1em;
+    letter-spacing: .5em;
+    font-family: 'Eagle Lake', cursive;
+    color: rgba(104, 154, 193, .75);
+}
+.navigation {
+    padding-right: 3em;
+}
 .horizontal {
     display: block;
 }
 
-
-
-
 .navigation li {
-    background: red;
     list-style: none;
     text-decoration: none;
     display: inline-block;
+   
 }
 
 .navigation li a {
     text-decoration: none;
+    font-weight: bold;
+    padding: 1.2em;
+    color: #5A712C;
+     margin-right: 1em;
+    margin-left: 1em;
+    padding-right: 1em;
+     background: rgba(170,170,170, .5);
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+    
 }
+
+.navigation li a:hover {
+    background: rgba(74, 51, 33,.75);
+    color:  rgba(160, 209, 60, 0.78);
+    transform: scale(1.5);
+}
+
+.minititle {
+    background: rgba(74, 51, 33,.75);
+    width: 60%;
+    margin-left: 2em;
+    margin-bottom: 1.5em;
+    margin-top: 4em;
+    font-size: 1.25em;
+    color: rgb(104, 154, 193);
+    padding: .5em;
+}
+
+.paragraph {
+    text-align: left;
+    line-height: 1.5em;
+    width: 70%;
+    margin: 1.5em auto;
+    padding: 1em;
+}
+
+.thumbs {
+   text-align: left;
+    line-height: 1.5em;
+    width: 95%;
+    margin: 1.5em auto;
+    padding: 1em;  
+}
+
+li {
+    list-style: none;
+    padding-top: .5em;
+}
+
+.divider {
+    background: rgba(74, 51, 33,.75);
+    text-align: left;
+    font-size: 1em;
+    color: rgb(104, 154, 193);
+    width: 75%;
+    margin-left: 4em;
+    margin-top: 3em;
+    padding: .4em;
+}
+
+
+/* navigation animation */
+
+.name li:hover {
+    animation: scale(1);
+}
+
 /* Portfolio Styling */
 
 .thumbs li, .fullsize li {
@@ -38,51 +134,73 @@ h3 {
 }
 
 /* Thumb Image Sizes */
+.thumbs li {
+    padding-bottom: 4em;
+}
+
 .monogram {
+    width: 11.125em;
+    height: 9em;
+/*
     width: 178px;
     height: 144px;
+*/
 }
+
 
 .childhood {
+    width: 7em;
+    height: 9.25em;
+/*
     width: 144px;
     height: 180px;
+*/
 }
 
+
 .paperclip {
+    width: 5.50em;
+    height: 8.79em;
+/*
     width: 103.125px;
     height: 159.25px;
+*/
 }
 
 .red {
+    width: 8.52em;
+    height: 5em;
+/*
     width: 159.375px;
     height: 103.125px;
+*/
 }
 
 .colorpalette {
+    width: 11.325em;
+    height: 8.512em;
+/*
     width: 198px;
     height: 153px;
+*/
 }
 
 /* Use :nth-child to add borders to 1st, 2nd, 3rd */
 
 .thumbs li:nth-child(1) a {
-  border: 5px solid red;
+  
   display: block;   
 }
 .thumbs li:nth-child(2) a {
-  border: 5px solid green;
   display: block;
 }
 .thumbs li:nth-child(3) a {
-  border: 5px solid blue;
   display: block;
 }
 .thumbs li:nth-child(4) a {
-  border: 5px solid yellow;
   display: block;
 }
 .thumbs li:nth-child(5) a {
-  border: 5px solid orange;
   display: block;
 }
 
@@ -116,24 +234,19 @@ h3 {
 
 /* Change Borders of Full Size Images */ 
 #fullsize-1:target {
-  border: 5px solid red;
   z-index: 1;
   /* z-index changes stacking order*/ 
 }
 #fullsize-2:target {
-  border: 5px solid green;
   z-index: 2;
 }
 #fullsize-3:target {
-  border: 5px solid blue;
   z-index: 3;
 }
 #fullsize-4:target {
-  border: 5px solid orange;
   z-index: 4;
 }
 #fullsize-5:target {
-  border: 5px solid orange;
   z-index: 5;
 }
 /* Fancify */
@@ -143,4 +256,15 @@ h3 {
 }
 .fullsize img:target {
   opacity: 1;
+}
+
+
+/* Background Change */
+
+.one {
+background-image: url(/img/shattered.png);        
+}
+
+.two {
+background-image: url(/img/light_grey_floral_motif.png);
 }
