@@ -107,9 +107,6 @@ li {
 
 /* navigation animation */
 
-.name li:hover {
-    animation: scale(1);
-}
 
 /* Portfolio Styling */
 
