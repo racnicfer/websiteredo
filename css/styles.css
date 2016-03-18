@@ -42,8 +42,8 @@ html {
 .navigation li a {
     text-decoration: none;
     font-weight: bold;
-    padding: 1.2em;
     color: #5A712C;
+    padding: 1.2em;
      margin-right: 1em;
     margin-left: 1em;
     padding-right: 1em;
@@ -105,7 +105,6 @@ li {
 }
 
 
-/* navigation animation */
 
 
 /* Portfolio Styling */
@@ -113,7 +112,7 @@ li {
 .thumbs li, .fullsize li {
   float: left;
   list-style: none;
-  margin: 5px;
+  margin: 1em;
 }
 
 h3 {
@@ -186,19 +185,19 @@ h3 {
 
 .thumbs li:nth-child(1) a {
   
-  display: block;   
+  display: inline-block;   
 }
 .thumbs li:nth-child(2) a {
-  display: block;
+  display: inline-block;
 }
 .thumbs li:nth-child(3) a {
-  display: block;
+  display: inline-block;
 }
 .thumbs li:nth-child(4) a {
-  display: block;
+  display: inline-block;
 }
 .thumbs li:nth-child(5) a {
-  display: block;
+  display: inline-block;
 }
 
 /* Fullsize Image Size (792 X 612)   */
@@ -264,4 +263,107 @@ background-image: url(/img/shattered.png);
 
 .two {
 background-image: url(/img/light_grey_floral_motif.png);
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 64em) {
+   
+    
+ }
+
+@media screen and (max-width: 64em) {
+
+    .name {
+        font-size: 3em;
+    }
+   .navigation {
+       padding: .5em;
+   margin: .5em;
+  }    
+    .minititle {
+        font-size: 1.25em;
+    }
+    .paragraph {
+        font-size: 1em;
+    }
+    .divider {
+        font-size:.75em;
+    }
+}
+
+@media screen and (max-width: 48em) {
+        html {background: green;}
+    .name {
+        font-size: 2em;
+    }
+   .navigation li a {
+       font-size: .75em;
+       padding: 1em;
+       margin: .25em;
+  }    
+    
+    .minititle {
+        font-size: 1em;
+    }
+    .paragraph {
+        font-size: .75em;
+    }
+    .topbar {
+        height: 15em;
+    }
+    .divider {
+        font-size:.6em;
+    }
+      .thumbs li {
+        transform: scale(.75);
+        display: block;
+        margin: .5em;
+        padding: .5em;
+          float: left;
+    }
+    .fullsize img {
+transform: scale(.5);
+        transform-origin: 0% 0%;
+        margin: 1em;
+        padding: .5em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    
+      .name {
+        font-size: 1.5em;
+    }
+   .navigation li a {
+       font-size: .55em;
+       padding: 1em;
+       margin: .15em;
+  }    
+    .minititle {
+        margin: 1em;
+        font-size: .75em;
+    }
+    .paragraph {
+        font-size: .5em;
+    }
+    .topbar {
+        margin: 1em;
+        height: 10em;
+    }
+     .divider {
+        font-size:.5em;
+    }
+    .thumbs li {
+        transform: scale(.75);
+        display: block;
+        margin: .5em;
+        padding: .5em;
+    }
+    .fullsize img {
+transform: scale(.25);
+        transform-origin: 0% 0%;
+        margin:.25em;
+        padding: .25em;
+    }
 }
